@@ -1,0 +1,727 @@
+.container
+    width: 1440px
+    display: block
+    margin: 0 auto
+.main-page
+    background-color: #4D5474
+    width: 100%
+    min-height: 1000px
+    .wrapper
+        display: flex
+    &__menu
+        width: 261px
+        height: 100vh
+        padding-top: 31px 
+        background-color: #1F2339
+        color: #fff
+        a
+            color: #fff
+        .humburger
+            display: none
+            margin-left: 10px
+            cursor: pointer
+            span
+                transition: 1s
+                &:nth-child(2)
+                    opacity: 100
+                    transition: 3s
+            &__active
+                display: block
+                width: 30px
+                height: 30px
+                span
+                    display: block
+                    width: 30px
+                    height: 2px
+                    background-color: #fff
+                    &:first-child
+                        width: 30px
+                        transform: translateY(4px) rotate(45deg)
+                        transition: 1s
+                    &:nth-child(2)
+                        opacity: 0
+                        transition: 0.5s
+                    &:last-child
+                        transform: translateY(-7px) rotate(-45deg)
+                        transition: 1s
+        &-item
+            width: 241px
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            cursor: pointer
+            padding: 0 20px
+            &:nth-child(3)
+                margin-bottom: 85px
+            .img
+                margin-right: 10px
+            .fill
+                fill: white
+        
+        .active-top
+            background: rgba(0, 0, 0, 0)
+            color: #43E8FF
+            .fill
+                fill: #43E8FF
+        .active
+            margin-left: 10px
+            width: 221px
+            height: 45px
+            padding-left: 10px
+            background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF
+            color: black
+            border-radius: 10px
+            .fill
+                fill: black
+            
+                
+    .active
+        display: flex      
+    &__content
+        display: none
+        flex-direction: column
+        width: 100%
+        padding: 57px 80px 68px 40px
+        &-header
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            height: 40px
+            .name
+                color: #fff
+            .btn
+                display: flex
+                align-items: center
+                &__plus
+                    width: 40px
+                    height: 40px
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    color: #fff
+                    font-size: 40px
+                    line-height: 24px
+                    margin-right: 23px
+                    cursor: pointer
+                &__settings
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    cursor: pointer
+        &-wrapper
+            margin-top: 50px
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &-item
+            width: 340px
+            height: 230px
+            padding: 20px
+            color: #fff
+            background: #383E57
+            box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15)
+            border-radius: 18px
+            position: relative
+            margin-bottom: 30px
+            .title
+                width: 100%
+                font-size: 16px
+                font-weight: 700
+                display: flex
+                justify-content: space-between
+                .btn
+                    display: flex
+                    align-items: center
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    color: #43E8FF
+                    cursor: pointer
+                    img
+                        margin-left: 5px
+            .subtitle
+                width: 100%
+                margin-top: 7px
+                font-weight: 400
+                font-size: 14px
+            .img
+                width: 182px
+                margin-right: 0
+                float: right
+                img
+                    position: absolute
+                    bottom: 33px
+                    right: 26px
+            .wrapper
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                width: 100%
+                .middle-info
+                    display: flex
+                    align-items: flex-end
+                    height: 82px
+                    font-weight: 400
+                    font-size: 14px
+                    margin-right: 20px
+                    margin-bottom: 35px
+                    h6
+                        font-weight: 300
+                        font-size: 80px
+                        line-height: 63px
+                        sup
+                            margin-left: -16px
+                            font-size: 36px
+                .bottom-info
+                    width: 45%
+                    font-weight: 400
+                    font-size: 14px
+                    color: #A1A6BE
+                    margin-top: 8px
+                .name
+                    margin-top: 23px
+                    font-weight: 400
+                    font-size: 14px
+                    span
+                        font-weight: 400
+                        font-size: 14px
+                        color: #A1A6BE
+                .buttons
+                    margin-top: 23px
+                    button
+                        background-color: rgba(0, 0 ,0 , 0)
+                        border: none
+                        cursor: pointer
+            .more
+                    color: #43E8FF
+                    margin-top: 33px
+                    font-weight: 600
+                    font-size: 14px
+                    cursor: pointer
+            .stat-wrapper
+            
+                display: flex
+                flex-direction: column
+                width: 374px
+                .years
+                    display: flex
+                    margin-top: 20px
+                    justify-content: space-between
+                    .year
+                        padding:10px
+                        width: 34%
+                        height: 39px
+                .results
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .result
+                        padding:10px
+                        border-top: 1px solid #151E41
+                        width: 34%
+                        height: 39px
+                        border-right: 1px solid #151E41
+                        &:last-child
+                            border-right: none
+                  
+        .big
+            width: 715px
+            height: 230px
+        .middle
+            width: 525px
+            height: 270px
+            &-wrapper
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                height: 100%
+                .harvest-img
+                    width: 206px
+                    height: 206px
+                    background-image: url('../img/icons/diagramm.png')
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    .top
+                        text-align: center
+                        height: 103px
+                        transform: translateX(10%)
+                        font-weight: 700
+                        font-size: 20px
+                    .bottom
+                        text-align: center
+                        transform: translateX(-10%)
+                        font-weight: 700
+                        font-size: 20px
+                        
+                .harvest
+                    margin: 34px 0 10px 34px
+                    font-weight: 400
+                    font-size: 14px
+                    color: #A1A6BE
+                    position: relative
+                    width: 33%
+                    .harvest2020
+                        margin-bottom: 10px
+                        font-weight: 700
+                        font-size: 14px
+                        color: white
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 14px
+                            height: 14px
+                            left: -35px
+                            top: 0px
+                            background: linear-gradient(141.65deg, #43E9FF 22.09%, #00ABAB 67.48%), #646981,
+                            border-radius: 5px
+                        
+                .harvest
+                    margin: 34px 0 10px 34px
+                    font-weight: 400
+                    font-size: 14px
+                    color: #A1A6BE
+                    position: relative
+                    width: 33%
+                    .harvest2019
+                        margin-bottom: 10px
+                        font-weight: 700
+                        font-size: 14px
+                        color: white
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 14px
+                            height: 14px
+                            left: -35px
+                            top: 0px
+                            background: linear-gradient(124.04deg, rgba(182, 26, 255, 0.5) -6.27%, rgba(0, 26, 255, 0.5) 98.36%), #656CFF
+                            border-radius: 5px
+                            .harvest2020
+                    margin: 34px 0 10px 34px
+                    font-weight: 400
+                    font-size: 14px
+                    color: #A1A6BE
+                    position: relative
+                    width: 33%
+                    .harvest
+                        margin-bottom: 10px
+                        font-weight: 700
+                        font-size: 14px
+                        color: white
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 14px
+                            height: 14px
+                            left: -35px
+                            top: 0px
+                            background: linear-gradient(141.65deg, #43E9FF 22.09%, #00ABAB 67.48%), #646981,
+                            border-radius: 5px
+            .auto2020
+                    margin: 34px 0 10px 34px
+                    font-weight: 400
+                    font-size: 14px
+                    color: #A1A6BE
+                    position: relative
+                    width: 33%
+                    .auto
+                        margin-bottom: 10px
+                        font-weight: 700
+                        font-size: 14px
+                        color: white
+                        &::before
+                            content: ''
+                            position: absolute
+                            width: 14px
+                            height: 14px
+                            left: -35px
+                            top: 0px
+                            background: linear-gradient(141.65deg, #43E9FF 22.09%, #00ABAB 67.48%), #646981,
+                            border-radius: 5px            
+            .name
+                margin-top: 20px
+                font-weight: 400
+                font-size: 14px
+            .add
+                margin-top: 35px
+                font-weight: 600
+                width: 150px
+                font-size: 14px
+                color: #43E8FF
+                background-color: rgba(0, 0, 0, 0)
+                border: none
+                cursor: pointer
+            .auto__img
+                width: 294px
+                height: 273px
+                background-image: url('../img/main/statistics.png')
+                display: flex
+                flex-wrap: wrap
+                margin-top: -42px
+                position: relative
+                &-item
+                    width: 142px
+                    border-left: 1px solid #000000
+                    height: 210px
+                    margin-top: 50px
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 310px
+                        bottom: 30px
+                        left: -17px
+                        height: 1px
+                        background-color: #000000
+
+                    &:nth-child(2)   
+                        border-right: 1px solid #000000
+                        
+    &__events
+        width: 100%
+        padding: 57px 80px 68px 40px
+        display: none
+        flex-wrap: wrap
+        &-wrappers
+            display: flex
+            justify-content: space-between
+            width: 100%
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 45%
+
+        &-header
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            height: 40px
+            .name
+                display: flex
+                align-items: flex-end
+                font-weight: 600
+                font-size: 16px
+                /* line-height: 16px */
+                color: #43E8FF
+                h2
+                    color: #fff
+                    margin-right: 17px
+                    font-weight: 700
+                    font-size: 20px
+            .btn
+                display: flex
+                align-items: center
+                &__white
+                    width: 238px
+                    height: 36px
+                    border-radius: 6px
+                    border: none
+                    margin-right: 23px
+                    cursor: pointer
+                &__plus
+                    width: 40px
+                    height: 40px
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    color: #fff
+                    font-size: 40px
+                    line-height: 24px
+                    margin-right: 23px
+                    cursor: pointer
+                &__settings
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    cursor: pointer
+        &-structure
+            display: flex
+            flex-direction: column
+            width: 45%
+            min-height: 800px
+            margin-top: 45px
+            background: #383E57
+            box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15)
+            border-radius: 18px
+            color: #FFF
+            .title
+                color: #fff
+                padding: 27px 20px
+            .wrapper
+                display: flex
+                flex-direction: column
+                border-top: 1px solid #151E41
+                padding: 27px 20px
+                .title
+                    padding: 0
+                .subtitle
+                    font-weight: 300
+                    font-size: 12px
+                    color: #FF8991
+                .persona
+                    font-weight: 400
+                    font-size: 14px
+                    margin-top: 21px
+                .adress
+                    display: flex
+                    align-items: center
+                    margin-top: 30px
+                    font-weight: 400
+                    font-size: 14px
+                    img
+                        margin-right: 7px
+                        width: 17px
+                        height: 17px
+                .team
+                    display: flex
+                    align-items: center
+                    margin-top: 11px
+                    font-weight: 400
+                    font-size: 14px
+                    img
+                        margin-right: 7px
+                        width: 17px
+                        height: 17px
+        &-checking 
+            display: flex
+            flex-direction: column
+            width: 100%
+            height: 166px
+            margin-top: 45px
+            background: #383E57
+            box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15)
+            border-radius: 18px
+            color: #FFF
+            padding: 27px 20px
+            .item
+                display: flex
+                margin-bottom: 10px
+                align-items: center
+                justify-content: space-between
+                .type
+                    width: 27%
+                .liner
+                    width: 34%
+                    height: 1px
+                    background-color: #fff
+                .checking__btn
+                    width: 33%
+                    height: 36px
+                    background: #23273A
+                    border-radius: 6px
+                    border: none
+                    font-weight: 600
+                    font-size: 16px
+                    color: #43E8FF
+                    cursor: pointer
+        &-form
+            display: flex
+            flex-direction: column
+            width: 100%
+            height: 665px
+            margin-top: 45px
+            background: #383E57
+            box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15)
+            border-radius: 18px
+            color: #FFF
+            padding: 27px 20px
+            position: relative
+            &::before
+                    content: ''
+                    position: absolute
+                    top: 136px
+                    left: 0px
+                    width: 100%
+                    height: 1px
+                    background-color: #151E41
+            .decision
+                margin-bottom: 30px
+                
+                .title
+                    font-weight: 400
+                    font-size: 14px
+                textarea
+                    width: 100%
+                    height: 56px
+                    padding: 7px 10px
+                    resize: none
+                    background: #3E4459
+                    border-radius: 5px
+                    border: none
+                    margin-top: 6px
+            .item
+                width: 303px
+                input
+                    width: 100%
+                    height: 32px
+                    padding: 6px 11px
+                    background: #3E4459
+                    border-radius: 5px
+                    border: none
+                    margin-top: 6px
+                .title
+                    margin-top: 17px
+            .short
+                width: 194px
+            .long
+                width: 100%
+            .btn__form
+                width: 138px
+                height: 36px
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+                background: #23273A
+                border-radius: 6px
+                border: none
+                color: #43E8FF
+                cursor: pointer
+    &__db
+        width: 100%
+        padding: 57px 80px 68px 40px
+        display: none
+        flex-wrap: wrap
+        &-header
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            height: 40px
+            .name
+                display: flex
+                align-items: flex-end
+                font-weight: 600
+                font-size: 16px
+                /* line-height: 16px */
+                color: #43E8FF
+                h2
+                    color: #fff
+                    margin-right: 17px
+                    font-weight: 700
+                    font-size: 20px
+            .btn
+                display: flex
+                align-items: center
+                input
+                    width: 465px
+                    height: 36px
+                    padding:8px 16px
+                    background: #3E4459
+                    border-radius: 5px
+                    border: none
+                    margin-right: 26px
+                &__white
+                    width: 112px
+                    height: 36px
+                    border-radius: 6px
+                    border: none
+                    margin-right: 23px
+                    cursor: pointer
+                &__plus
+                    width: 40px
+                    height: 40px
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    color: #fff
+                    font-size: 40px
+                    line-height: 24px
+                    margin-right: 23px
+                    cursor: pointer
+                &__settings
+                    background-color: rgba(0, 0, 0, 0)
+                    border: none
+                    cursor: pointer
+        &-content
+            margin-top: 58px
+            width: 100%
+            height: 789px
+            left: 281px
+            top: 147px
+            background: #383E57
+            box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15)
+            border-radius: 18px
+            .title
+                width: 100%
+                display: flex
+                color: #fff
+                padding: 17px 10px
+                font-weight: 700
+                font-size: 14px
+                .org-name
+                    width: 225px
+                    
+                .number
+                    width: 128px
+                    padding-left: 29px
+                .name
+                    width: 241px
+                    padding-left: 29px
+                .address
+                    width: 450px
+                    padding-left: 29px
+            .wrapper
+                display: flex
+                flex-wrap: wrap
+                height: 90%
+                overflow-y: scroll
+
+            .items
+                display: flex
+                width: 100%
+                height: 49px
+                align-items: center
+                font-weight: 400
+                font-size: 12px
+                color: #A1A6BE
+                .item
+                    height: 100%
+                    border-top: 1px solid rgba(0, 0, 0, 0.5)
+                    border-right: 1px solid rgba(0, 0, 0, 0.5)
+                    display: flex
+                    align-items: center
+                    &:last-child
+                        border-right: none
+                .org
+                    padding-left: 10px
+                    width: 225px
+                    
+                    img
+                        margin-right: 9px
+                .num
+                    width: 128px
+                    padding-left: 29px
+                .name
+                    width: 241px
+                    padding-left: 29px
+                .address
+                    width: 400px
+                    padding-left: 29px
+                .btn
+                    button
+                        background-color: rgba(0, 0, 0, 0)
+                        border: none
+                        cursor: pointer
+    &__error
+        display: none
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100vh
+        color: #43E8FF
+        padding: 30px 20px 30px 60px
+        h2
+            font-size: 90px
+            font-weight: 700
+            text-align: center
+        .liner
+            width: 50%
+            height: 3px
+            background-color: #43E8FF
+            margin-top: 40px
+        .subtitle
+            font-size: 60px
+            font-weight: 400
+            color: #43E8FF
+            margin-top: 30px
+            text-align: center
